@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Go Up! Cursos prácticos de inteligencia artificial, programación y tecnologías de la información. Aprende a tu ritmo y desarrolla habilidades para el futuro.">
+  <meta name="theme-color" content="#101828">
+  <title>Go Up! | Cursos de IA, programación y TI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Go Up!, inicio">
+        <img class="brand-logo" src="logo.png" alt="Go Up!">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#cursos">Cursos</a>
+        <a href="#rutas">Rutas de aprendizaje</a>
+        <a href="#nosotros">Nosotros</a>
+        <a class="nav-cta" href="#newsletter">Recibir novedades <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> TU PRÓXIMO NIVEL EMPIEZA AQUÍ</div>
+        <h1>Aprende hoy.<br><span class="gradient-text">Crea el mañana.</span></h1>
+        <p class="hero-copy">Cursos prácticos de inteligencia artificial, programación y tecnología para convertir tu curiosidad en habilidades reales.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cursos">Explorar cursos <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#rutas"><span class="play-icon" aria-hidden="true">▶</span> Descubre tu ruta</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>👩🏻‍💻</span><span>👨🏽‍💻</span><span>👩🏾‍🔬</span></div>
+          <div><strong>Aprende a tu ritmo</strong><small>Contenido claro, práctico y actualizado</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de tecnología">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-core"><span class="core-symbol">✳</span><span class="core-label">IDEAS → IMPACTO</span></div>
+        <div class="float-card float-ai"><span class="float-icon purple">✦</span><div><small>Inteligencia artificial</small><strong>Imagina más</strong></div></div>
+        <div class="float-card float-code"><span class="float-icon green">{ }</span><div><small>Programación</small><strong>Construye soluciones</strong></div></div>
+        <div class="float-card float-data"><span class="float-icon orange">⌘</span><div><small>Data & cloud</small><strong>Conecta el futuro</strong></div></div>
+      </div>
+      <div class="container hero-bottom"><span>IA GENERATIVA</span><i></i><span>DESARROLLO WEB</span><i></i><span>DATOS & CLOUD</span><i></i><span>CIBERSEGURIDAD</span></div>
+    </section>
+
+    <section class="section courses-section" id="cursos">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow eyebrow-dark">APRENDE HACIENDO</span><h2>Encuentra tu próximo <span class="gradient-text">gran paso.</span></h2></div>
+          <p>Desde tus primeros pasos hasta habilidades avanzadas: elige el tema que te mueve.</p>
+        </div>
+        <div class="course-tools">
+          <label class="search-box" for="courseSearch"><span aria-hidden="true">⌕</span><input id="courseSearch" type="search" placeholder="Buscar un curso..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <div class="filter-list" role="group" aria-label="Filtrar cursos por categoría">
+            <button class="filter-chip active" data-filter="Todos" aria-pressed="true">Todos</button>
+            <button class="filter-chip" data-filter="IA" aria-pressed="false">Inteligencia artificial</button>
+            <button class="filter-chip" data-filter="Programación" aria-pressed="false">Programación</button>
+            <button class="filter-chip" data-filter="TI" aria-pressed="false">TI & datos</button>
+          </div>
+        </div>
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card" data-category="IA" data-search="inteligencia artificial generativa prompts chatgpt">
+            <div class="course-visual visual-ai"><span class="visual-tag">MÁS POPULAR</span><div class="visual-orb">✦</div><span class="visual-code">AI / 01</span></div>
+            <div class="course-info"><div class="course-meta"><span>INTELIGENCIA ARTIFICIAL</span><span>⏱ 6 horas</span></div><h3>IA generativa desde cero</h3><p>Comprende los modelos generativos y aprende a crear mejores resultados con prompts útiles.</p><div class="course-footer"><span class="level"><i class="level-dot beginner"></i> Principiante</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre IA generativa desde cero">Ver curso <span>↗</span></a></div></div>
+          </article>
+          <article class="course-card" data-category="Programación" data-search="python programación lógica automatización código">
+            <div class="course-visual visual-python"><span class="visual-tag">BASES SÓLIDAS</span><div class="python-symbol">Py<span>•</span></div><span class="visual-code">DEV / 02</span></div>
+            <div class="course-info"><div class="course-meta"><span>PROGRAMACIÓN</span><span>⏱ 8 horas</span></div><h3>Python para principiantes</h3><p>Domina variables, funciones y estructuras de control con ejercicios enfocados en problemas reales.</p><div class="course-footer"><span class="level"><i class="level-dot beginner"></i> Principiante</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre Python para principiantes">Ver curso <span>↗</span></a></div></div>
+          </article>
+          <article class="course-card" data-category="TI" data-search="datos sql bases de datos consultas análisis">
+            <div class="course-visual visual-data"><span class="visual-tag">MUY PRÁCTICO</span><div class="data-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-code">DATA / 03</span></div>
+            <div class="course-info"><div class="course-meta"><span>DATOS & TI</span><span>⏱ 5 horas</span></div><h3>SQL y análisis de datos</h3><p>Consulta, organiza e interpreta datos para transformar información en decisiones.</p><div class="course-footer"><span class="level"><i class="level-dot intermediate"></i> Intermedio</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre SQL y análisis de datos">Ver curso <span>↗</span></a></div></div>
+          </article>
+          <article class="course-card" data-category="Programación" data-search="html css javascript desarrollo web frontend">
+            <div class="course-visual visual-web"><span class="visual-tag">CREA EN LA WEB</span><div class="web-symbol">&lt;/&gt;</div><span class="visual-code">WEB / 04</span></div>
+            <div class="course-info"><div class="course-meta"><span>DESARROLLO WEB</span><span>⏱ 10 horas</span></div><h3>HTML, CSS y JavaScript</h3><p>Construye páginas responsivas y agrega interacciones con las bases del desarrollo web.</p><div class="course-footer"><span class="level"><i class="level-dot beginner"></i> Principiante</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre HTML, CSS y JavaScript">Ver curso <span>↗</span></a></div></div>
+          </article>
+          <article class="course-card" data-category="TI" data-search="ciberseguridad seguridad redes contraseñas amenazas">
+            <div class="course-visual visual-security"><span class="visual-tag">PROTEGE LO DIGITAL</span><div class="shield-symbol">⬡</div><span class="visual-code">SEC / 05</span></div>
+            <div class="course-info"><div class="course-meta"><span>TECNOLOGÍA</span><span>⏱ 4 horas</span></div><h3>Fundamentos de ciberseguridad</h3><p>Identifica riesgos comunes y conoce prácticas para proteger sistemas, cuentas y datos.</p><div class="course-footer"><span class="level"><i class="level-dot beginner"></i> Principiante</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre ciberseguridad">Ver curso <span>↗</span></a></div></div>
+          </article>
+          <article class="course-card" data-category="IA" data-search="machine learning aprendizaje automático modelos datos">
+            <div class="course-visual visual-ml"><span class="visual-tag">SIGUIENTE NIVEL</span><div class="network-art"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-code">ML / 06</span></div>
+            <div class="course-info"><div class="course-meta"><span>INTELIGENCIA ARTIFICIAL</span><span>⏱ 7 horas</span></div><h3>Introducción a Machine Learning</h3><p>Explora cómo los modelos aprenden de los datos y conoce sus principales aplicaciones.</p><div class="course-footer"><span class="level"><i class="level-dot intermediate"></i> Intermedio</span><a href="#newsletter" class="course-link" aria-label="Solicitar información sobre Machine Learning">Ver curso <span>↗</span></a></div></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No encontramos cursos con esa búsqueda. Prueba con otra palabra o categoría.</p>
+        <div class="center-action"><a href="#newsletter" class="button button-dark">Recibir nuevos cursos <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="path-section" id="rutas">
+      <div class="container path-layout">
+        <div class="path-copy"><span class="eyebrow">TU CAMINO, A TU MANERA</span><h2>Un objetivo.<br><span class="gradient-text">Una ruta clara.</span></h2><p>No necesitas saberlo todo para comenzar. Elige una dirección, aprende las bases y avanza con proyectos que puedas mostrar.</p><a class="button button-primary" href="#cursos">Elegir mi primer curso <span>→</span></a></div>
+        <div class="path-steps">
+          <article class="path-step"><span class="step-number">01</span><div class="step-icon">✦</div><div><h3>Explora</h3><p>Descubre las áreas tecnológicas que conectan con tus intereses.</p></div><span class="step-arrow">↗</span></article>
+          <article class="path-step"><span class="step-number">02</span><div class="step-icon">⌘</div><div><h3>Practica</h3><p>Convierte conceptos en habilidades mediante ejercicios y retos.</p></div><span class="step-arrow">↗</span></article>
+          <article class="path-step"><span class="step-number">03</span><div class="step-icon">↗</div><div><h3>Construye</h3><p>Aplica lo aprendido en proyectos para tu portafolio profesional.</p></div><span class="step-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual"><div class="about-big">N<span>.</span></div><div class="about-sticker">CURIOSIDAD<br>EN ACCIÓN ↗</div><div class="about-caption">APRENDIZAJE CON PROPÓSITO</div></div>
+        <div class="about-copy"><span class="eyebrow eyebrow-dark">CONOCE NEXTSKILL</span><h2>La tecnología cambia.<br><span class="gradient-text">Tú puedes cambiar con ella.</span></h2><p>Creemos que aprender tecnología debe ser accesible, práctico y emocionante. Por eso reunimos temas clave para que desarrolles nuevas competencias paso a paso.</p><div class="value-list"><div><span>✓</span><p><strong>Aprendizaje práctico</strong><br>Enfócate en aplicar lo que estudias.</p></div><div><span>✓</span><p><strong>Contenido organizado</strong><br>Encuentra el siguiente paso con claridad.</p></div><div><span>✓</span><p><strong>Para distintos niveles</strong><br>Empieza desde cero o profundiza tus bases.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="container newsletter-wrap">
+        <div><span class="eyebrow">IDEAS QUE TE IMPULSAN</span><h2>Aprende algo nuevo.<br><span class="gradient-text">Cada semana.</span></h2><p>Déjanos tu correo para recibir novedades, recursos y próximos cursos.</p></div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <label for="emailInput">Tu correo electrónico</label>
+          <div class="email-control"><input id="emailInput" name="email" type="email" placeholder="tu@correo.com" required autocomplete="email"><button type="submit" aria-label="Suscribirme">→</button></div>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite">Sin spam. Solo contenido que vale la pena.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top"><a class="brand footer-brand" href="#inicio"><img class="brand-logo" src="logo.png" alt="Go Up!"></a><p>Aprende habilidades para construir lo que sigue.</p><div class="footer-links"><a href="#cursos">Cursos</a><a href="#rutas">Rutas</a><a href="#nosotros">Nosotros</a></div></div>
+    <div class="container footer-bottom"><span>© <span id="currentYear">2026</span> Go Up! Proyecto educativo demostrativo.</span><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+</body>
+</html>
